@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Windows.Input;
+using Xamarin.Forms;
 
 namespace NavigationTransitions
 {
@@ -9,7 +10,7 @@ namespace NavigationTransitions
 
         public MainPageModel()
         {
-            NavigateToSecondPage = new SingleLockCommand(() => App.Current.MainPage.Navigation.PushAsync(new SecondPage()));
+            NavigateToSecondPage = new SingleLockCommand(() => Application.Current.MainPage.Navigation.PushAsync(new SecondPage())); //Lazy, Mainpage does not exist in this ctor.
         }
     }
 }
