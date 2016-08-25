@@ -8,7 +8,7 @@ using Android.Views;
 using Android.Widget;
 using Android.OS;
 
-namespace NavigationTransitions.Droid
+namespace NavigationTransitions.AppCompat
 {
     [Activity(
         Label = "NavigationTransitions.Droid",

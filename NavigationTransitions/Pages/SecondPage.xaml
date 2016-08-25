@@ -6,7 +6,8 @@
 		x:Class="NavigationTransitions.SecondPage">
 	<ContentPage.Content>
 		<StackLayout>
-			<Button Text="Go Back" Clicked="Handle_Clicked" />
+			<Button Text="Third page" Command="{Binding NavigateToThirdPage}" />
+			<Button Text="Go Back" Command="{Binding NavigateBack}" />
 		</StackLayout>
 	</ContentPage.Content>
 </ContentPage>

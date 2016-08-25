@@ -6,7 +6,7 @@
 		x:Class="NavigationTransitions.MainPage">
 	<ContentPage.Content>
 		<StackLayout>
-			<Button Text="Click me!" Clicked="Handle_Clicked" />
+			<Button Text="Second page" Command="{Binding NavigateToSecondPage}" />
 		</StackLayout>
 	</ContentPage.Content>
 </ContentPage>

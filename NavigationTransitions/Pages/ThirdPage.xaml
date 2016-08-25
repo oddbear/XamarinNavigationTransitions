@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage
+	xmlns="http://xamarin.com/schemas/2014/forms"
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+	BackgroundColor="Silver"
+	x:Class="NavigationTransitions.ThirdPage">
+	<ContentPage.Content>
+		<StackLayout>
+			<Button Text="More third page" Command="{Binding NavigateToThirdPage}" />
+			<Button Text="Go Back" Command="{Binding NavigateBack}" />
+			<Button Text="Go To Root" Command="{Binding NavigateToRoot}" />
+		</StackLayout>
+	</ContentPage.Content>
+</ContentPage>

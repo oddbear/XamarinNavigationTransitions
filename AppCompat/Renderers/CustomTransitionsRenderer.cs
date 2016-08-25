@@ -1,12 +1,18 @@
 ﻿using System;
-using NavigationTransitions.Droid;
+using NavigationTransitions.AppCompat;
 using Xamarin.Forms;
 
+//https://developer.android.com/reference/android/app/Activity.html#overridePendingTransition(int
+//https://developer.android.com/reference/android/app/FragmentManager.html#beginTransaction()
+//https://developer.android.com/reference/android/app/FragmentManager.html#executePendingTransactions()
+
+//https://github.com/xamarin/Xamarin.Forms/blob/master/Xamarin.Forms.Platform.Android/AppCompat/NavigationPageRenderer.cs
 [assembly: ExportRenderer(typeof(NavigationPage), typeof(CustomTransitionsRenderer))]
-namespace NavigationTransitions.Droid
+namespace NavigationTransitions.AppCompat
 {
     public class CustomTransitionsRenderer : Xamarin.Forms.Platform.Android.AppCompat.NavigationPageRenderer
     {
+        //SwitchContentAsync
         protected override void SetupPageTransition(Android.Support.V4.App.FragmentTransaction transaction, bool isPush)
         {
             if (isPush)

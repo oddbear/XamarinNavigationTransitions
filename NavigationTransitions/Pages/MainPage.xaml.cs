@@ -15,6 +15,7 @@ namespace NavigationTransitions
         public MainPage()
         {
             InitializeComponent();
+            this.BindingContext = new MainPageModel();
         }
     }
 }
